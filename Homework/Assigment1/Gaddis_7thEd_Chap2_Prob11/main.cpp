@@ -6,7 +6,7 @@
  */
 
 #include <cstdlib>
-
+#include<iostream>
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -19,9 +19,9 @@ float onHway=26.8;//Hwy miles per gallon
 float disTown=gasTank*inTown;
 float disHway=gasTank*onHway;
 //Output the results
-cout<<"Distance in Town on a tank of gas="<<endl;
+cout<<"Distance in Town on a tank of gas=";
 cout<<disTown<<"(miles)"<<endl;
-cout<<"Distance on Hwy with a tank of gas="<<endl;
+cout<<"Distance on Hwy with a tank of gas=";
 cout<<disHway<<"(miles)" <<endl;
     return 0;
 }
