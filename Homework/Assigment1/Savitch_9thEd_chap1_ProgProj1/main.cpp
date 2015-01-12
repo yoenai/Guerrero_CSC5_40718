@@ -17,15 +17,17 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-
+// Declare and initialize Variables.
     int Integer1,Integer2,Product,Sum;
     cout <<" Enter the number for Integer1.\n";
     cin >> Integer1 ;
     cout <<" Enter number for Integer2.\n";
     cin>> Integer2;
+    //Calculation
     Sum=Integer1+Integer2 ;
-    cout <<"Sum of Integers " << Sum << endl ;
     Product = Integer1 * Integer2;
+    //Output the results
+    cout <<"Sum of Integers " << Sum << endl ;
     cout <<"Product of Integers " << Product;
     
     return 0;
