@@ -1,10 +1,8 @@
 /* 
  * File:   main.cpp
- * Author: Dr Mark E. Lehr *
- * Created on January 13, 2015, 10:15 AM
- * Purpose: bitcoin conversion
+ * Author: Yoenai Guerrero
+ * Created on January 19, 2015, 8:37 PM
  */
-
 //System Libraries
 #include <iostream>
 using namespace std;
@@ -17,25 +15,29 @@ using namespace std;
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
-    //Declare variables and initialize
-    float bcToDlr=232.8;   //Jan 13th, 2015 10:17am
-    float erToDlr=0.849381;//Same Date
-    float ynToDlr=118.03;  //Same Date
-    float bitcoin,dollars,euros,yen;
-    //Input the number of bitcoin and then convert
-    cout<<"Input the number of bitcoin "<<endl;
-    cout<<"You wish to purchase."<<endl;
-    cin>>bitcoin;
-    //Convert to all the currencies
-    dollars=bcToDlr*bitcoin;
-    euros=erToDlr*dollars;
-    yen=ynToDlr*dollars;
-    //Output the results
-    cout.setf(ios::fixed);
-    cout.precision(2);
-    cout<<bitcoin<<" =   "<<dollars<<"(dollars)"<<endl;
-    cout<<bitcoin<<" =   "<<euros<<"(euros)"<<endl;
-    cout<<bitcoin<<" = "<<yen<<"(yen)"<<endl;
-    //Exit stage right!
+    //Declare and initialize 
+    char A=15,B=12,C=9;//Seat class
+    int NumA,//Number of seats for class A
+            NumB,//Number of seats for class B
+            NumC;//NUmber of seats for class C
+    
+     float income;
+    //Prompt user for nuber of eats for each class
+     cout<<"Enter the number of seats sold for class A"<<endl;
+     cin>>NumA;
+     cout<<"Enter the number of seats sold for class B"<<endl;
+     cin>>NumB;
+     cout<<"Enter the number of seats sold for class C"<<endl;
+     cin>>NumC;
+     //calculations 
+     income=(NumA*A)+(NumB*B)+(NumC*C);
+     //output the results 
+     cout.setf(ios::fixed);
+     cout.precision(2);
+     cout<<"Gross Income of seat sales is $"<<income<<endl;
+     cout<<"Good Job!";
+     
+
     return 0;
 }
+
